@@ -1,0 +1,332 @@
+body{
+    
+    color: beige;
+    margin: 0px;
+    padding:0px;
+    background-color: #fde3cb;
+    overflow-x: hidden;
+    
+    }
+.kylogo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width:100px;
+}    
+
+#eventpg{
+    position: relative;
+    top: 0px;
+    margin: 0px;
+    padding:0px;
+    width: 100%;
+    height: 100vh;
+    background-color: #6fc7e1;
+    color: #faf2eb;
+    text-align: center;
+    line-height: 0px;
+    font-size:1300%;
+    background-image: url();
+    overflow: hidden;
+    
+    
+}
+
+#eventpg div:first-child{
+	margin-top:0px;
+
+}
+
+.evName{
+    display: none;
+}
+
+.subeventpg {
+    background-color: #ffa883;
+    padding: 0px;
+    width: 98%;
+    height: 95vh;
+    margin: 30px auto ;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+    
+    }
+
+.sename{
+    float: left;
+    display: block;
+    padding-bottom:30px;
+    font-size: 30px;
+    background-color: green;
+    height: 100%;
+    color: #faf2eb;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+    writing-mode: vertical-rl;
+    line-height:0px;
+    
+} 
+
+.sename:hover{
+	font-size: 31px;
+}
+
+.semain{
+    display: none;
+    float: left;
+    background-color: #ffa883;
+    height: 100%;
+    width:60%;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+    padding: 0px;
+    text-align: center;
+    font-size: 120%;
+    color: #1f7994;
+    animation-name: slowOpen;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+     
+
+}
+
+@keyframes slowOpen{
+	0%{width:0%;}
+	100%{width:60%;}
+        }
+        
+
+.mainimg{
+    float: left;
+    margin-bottom: 25px;
+    padding: 0px;
+    width: 100%;
+    height: 50vh;
+    border: 2px solid black;
+}
+
+.seContent{
+    margin: 40px;
+}
+
+#sub_event_footer{
+    position: absolute;
+    padding:0px;
+    bottom: 25vh;
+    left:0px;
+    width: 100%;
+    height: 30vh;
+    font-size: 50px;
+    background-color: rgba(0,0,0,0);
+    display: inline-block;
+    text-align: center;
+} 
+
+.box{
+    display: inline-block;
+    text-align: center;
+  }
+.img{
+    margin-left:20px;
+    padding: 3px;
+    height: 200px;
+    width: 230px;
+    background-color: aliceblue;
+    display: inline-table;
+        }
+  
+.jname{
+     width: 236px;
+     height: 30px;
+     padding: 0.1px;
+     margin-left: 20px;
+     text-align: center;
+     font-size: 10px;
+     color :#1f7994;
+     background-color: aliceblue;
+   }
+ 
+.eventnameAnimation {
+    font-size:100px;
+	text-align:center;
+	animation-name: fontB;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction:alternate;
+		}
+
+     @keyframes fontB{
+	0%{font-size:80px;}
+	100%{font-size:130px;}
+		}
+
+     span:nth-child(odd){
+	animation-delay:3s;
+		}
+  
+
+/*------------------------------------------phone--------------------------------------*/
+
+
+
+
+@media (max-width:800px){
+
+            .kylogo{
+                position: unset;
+                width:80px;
+            }
+            .semain{
+                overflow-x: scroll;
+                height: 100vh;
+            }
+            .sename{
+                height: 96vh;
+            }
+           .subeventpg {
+                 padding:0px;
+                 margin:0px;
+                 overflow:visible;
+                 width:100%;
+                 height: 100vh;
+            }
+            
+            #eventpg{
+                 font-size: 100px;
+                 height:100vh;
+                 line-height:2vh;
+                 list-style: width 2vh;
+                 animation: none;
+                 
+        
+            } 	
+            #sub_event_footer{
+                bottom: 40vh;
+                font-size: 30px;
+        
+                
+            }
+            .eventnameAnimation{
+                animation: none;
+                font-size: 40px;
+                display: none;
+            }
+            .img{
+                 
+                width: 180px;
+                height: 180px;
+                display: inline-block;
+            }
+            .jname{
+                width: 176px;
+                height: 26px;
+                padding: 5px;
+                font-size: 15px;
+                line-height: 0px;
+            }
+            .box{
+                margin-left: 0px;
+                margin-top: 30px;
+            }
+        
+            .evName{
+                display: block;
+                font-size: 60px;
+            }
+            
+                }
+@media (max-width:600px){
+
+        .sename{
+             clear: both;
+             height:5vh;
+             font-size: 20px;
+                    }
+                
+        .sename{
+             width:100%!important;
+             writing-mode: horizontal-tb;
+                    }
+                
+         .semain{
+             clear:both;
+             width:100%;
+             height:100vh;
+             overflow-x: scroll;
+             animation-name: openDown;
+             animation-duration: 1s;
+             animation-iteration-count: initial;
+             animation-direction: normal;
+                        
+                    }
+                
+        @keyframes openDown{
+            0%{height:0vh;}
+            100%{height:100vh;}
+                    } 
+        .subeventpg {
+             padding:0px;
+             margin:0px;
+             overflow:visible;
+             width:100%;
+                    }
+                    
+        #eventpg{
+             font-size: 100px;
+             height:100vh;
+             line-height:2vh;
+             list-style: width 2vh;
+             animation: none;
+                    } 	
+        #sub_event_footer{
+            bottom: 40vh;
+            font-size: 30px;
+                     }
+        .eventnameAnimation{
+            animation: none;
+            font-size: 40px;
+            display: none;
+                    }
+        .img{
+                         
+            width: 120px;
+            height: 120px;
+            display: inline-block;
+                    }
+        .jname{
+            width: 116px;
+            height: 16px;
+            padding: 5px;
+            font-size: 10px;
+            line-height: 0px;
+                    }
+        .box{
+            margin-left: 0px;
+            margin-top: 30px;
+                    }
+                
+        .evName{
+            display: block;
+            font-size: 60px;
+                    }
+                    
+        }   
+
+                     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
